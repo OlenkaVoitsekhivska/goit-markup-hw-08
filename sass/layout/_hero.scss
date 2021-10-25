@@ -1,0 +1,64 @@
+.hero-box {
+  display: block;
+  /* background-color: var(--hero-footer-bcg); */
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.overlay {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/bcg-header.jpg');
+
+  background-repeat: no-repeat;
+
+  max-width: 100%;
+  background-size: cover;
+  height: 600px;
+  background-position: center;
+
+  /* margin-right: auto;
+  margin-left: auto; */
+}
+.hero-title {
+  width: 696px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  color: getColor('white');
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+  min-width: 200px;
+  font-family: Roboto;
+  background-color: getColor('blue');
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: getColor('white');
+}
+@media screen and (max-width: 480px) {
+  .hero-box {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  .hero-title {
+    width: 360px;
+    font-size: 26px;
+  }
+  .overlay {
+    height: 400px;
+  }
+}

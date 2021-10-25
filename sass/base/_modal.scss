@@ -1,0 +1,230 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 528px;
+  height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: getColor('white');
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(2);
+  }
+}
+
+// CLOSE BTN
+.data-modal-close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background-color: getColor('white');
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  .icon-close {
+    width: 18px;
+    height: 18px;
+    fill: getColor('black');
+    background-color: getColor('white');
+    border-radius: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: getColor('blue');
+    }
+  }
+}
+
+label {
+  display: block;
+}
+
+.input-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  li {
+    margin-bottom: 10px;
+  }
+  li:focus-within .icon-name {
+    fill: getColor('blue');
+  }
+  input {
+    width: 100%;
+    height: 40px;
+    padding: 0 0 0 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+      outline: 1px solid getColor('blue');
+      border: transparent;
+    }
+  }
+}
+
+.signup-form {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+  .signup-text {
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 448px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: getColor('headings');
+  }
+  label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: getColor('paragraph-contact');
+  }
+}
+
+.submit-btn {
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+  height: 50px;
+  background-color: getColor('blue');
+  color: getColor('white');
+  border: none;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px #00000026;
+  border-radius: 4px;
+}
+
+.icon-input {
+  margin-top: 4px;
+  position: relative;
+  .icon-name {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    transition: fill 250ms ubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  position: relative;
+}
+.comment textarea {
+  margin-top: 4px;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  border-radius: 4px;
+  transition-property: outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    outline: 1px solid #2196f3;
+    border: transparent;
+  }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+  textarea:focus::placeholder {
+    opacity: 0;
+  }
+}
+
+.policy {
+  position: relative;
+  height: 24px;
+  margin-bottom: 30px;
+  label {
+    position: absolute;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+  }
+  .policy-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: getColor('paragraph-contact');
+  }
+  .policy-conditions {
+    margin: 0;
+    margin: 0;
+    display: inline;
+    color: getColor('blue');
+    text-decoration: underline;
+  }
+}
+
+.check-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  pointer-events: none;
+}
+.icon-check {
+  position: absolute;
+  left: 14px;
+  top: 3px;
+  border-radius: 1px;
+  border: 2px solid getColor('black');
+  fill: transparent;
+  transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .check-input:checked + label & {
+    background-color: getColor('blue');
+    fill: getColor('white');
+    border: transparent;
+  }
+}

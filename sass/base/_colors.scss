@@ -1,0 +1,14 @@
+$colors: (
+  'blue': #2196f3,
+  'white': #ffffff,
+  'black': #000000,
+  'hero-heading': #ffffff,
+  'headings': #212121,
+  'crew-bcg': #f5f4fa,
+  'hero-footer-bcg': #2f303a,
+  'paragraph-contact': #757575,
+  'footer-contacts': #ffffff99,
+);
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
