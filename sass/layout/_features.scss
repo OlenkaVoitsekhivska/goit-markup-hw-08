@@ -41,10 +41,13 @@
 .features__card {
   margin-top: 30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) {
   .features {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .features__list {
+    display: block;
   }
   .features__item,
   .rectangle {
@@ -55,5 +58,35 @@
   }
   .features__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .features__list {
+    display: flex;
+    // flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .features__item {
+    width: calc((100% - 30px) / 2);
+  }
+  .features__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .features__item {
+    width: calc((100% - 6 * 15px) / 4);
+  }
+  .features__feature {
+    text-align: left;
   }
 }
