@@ -39,6 +39,11 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   .services__item {
     width: calc((100% - 4 * 15px) / 3);
   }
