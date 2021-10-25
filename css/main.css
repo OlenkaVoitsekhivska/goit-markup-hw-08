@@ -461,6 +461,12 @@ li {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .services__item {
+    width: calc((100% - 4 * 15px) / 3);
+  }
+}
+
 .crew {
   background-color: #f5f4fa;
   padding-top: 94px;

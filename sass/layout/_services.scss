@@ -38,5 +38,8 @@
     display: none;
   }
 }
-// @media screen and (min-width: 1200px) {
-// }
+@media screen and (min-width: 1200px) {
+  .services__item {
+    width: calc((100% - 4 * 15px) / 3);
+  }
+}
