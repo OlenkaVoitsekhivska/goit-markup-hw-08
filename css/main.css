@@ -275,6 +275,13 @@ li {
   color: #ffffff;
 }
 
+@media screen and (min-width: 320px) {
+  .hero-title {
+    font-size: 26px;
+    width: auto;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .hero-box {
     padding-top: 118px;
@@ -476,7 +483,7 @@ li {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .services__list {
     display: -webkit-box;
     display: -ms-flexbox;
