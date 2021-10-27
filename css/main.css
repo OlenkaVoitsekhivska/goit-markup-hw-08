@@ -600,11 +600,12 @@ li {
     margin-bottom: 0;
   }
   .socials-list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-right: 122px;
-    padding-left: 122px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .socials-list li + li {
+    margin-left: 10px;
   }
 }
 
@@ -624,11 +625,9 @@ li {
     margin-bottom: 0;
   }
   .socials-list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-right: 64px;
-    padding-left: 64px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -647,11 +646,9 @@ li {
     margin-bottom: 0;
   }
   .socials-list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-right: 32px;
-    padding-left: 32px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
