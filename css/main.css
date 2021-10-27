@@ -1357,6 +1357,13 @@ label {
 }
 
 @media screen and (min-width: 320px) {
+  b {
+    display: block;
+    text-align: center;
+  }
+  .subscribe__btn {
+    margin-top: 20px;
+  }
   .subscribe__group input {
     width: 100%;
   }
