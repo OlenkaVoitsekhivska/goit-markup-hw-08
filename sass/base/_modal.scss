@@ -18,8 +18,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
+  // width: 528px;
+  // height: 581px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 528px;
+    height: 581px;
+  }
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -94,14 +102,23 @@ label {
   margin-left: auto;
   display: flex;
   flex-direction: column;
-  width: 528px;
-  height: 581px;
+  // width: 528px;
+  // height: 581px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 528px;
+    height: 581px;
+  }
   padding: 40px;
+
   .signup-text {
     padding: 0;
     margin: 0;
     display: block;
-    width: 448px;
+    // width: 448px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -119,7 +136,6 @@ label {
     color: getColor('paragraph-contact');
   }
 }
-
 .submit-btn {
   padding: 0;
   margin-right: auto;
