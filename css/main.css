@@ -459,7 +459,7 @@ li {
   }
   .hero-title {
     font-size: 26px;
-    width: 360px;
+    width: auto;
   }
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero480_1x.jpg");
@@ -475,9 +475,14 @@ li {
   }
 }
 
+@media screen and (min-width: 400px) {
+  .hero-title {
+    width: 360px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero-title {
-    display: block;
     width: 360px;
     font-size: 26px;
   }
