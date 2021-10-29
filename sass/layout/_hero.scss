@@ -64,13 +64,13 @@
   }
   .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('/images/hero480_1x.jpg');
+      url('../images/hero480_1x.jpg');
     background-size: cover;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .overlay {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('/images/hero480_2x.jpg');
+        url('../images/hero480_2x.jpg');
     }
   }
 }
@@ -82,12 +82,12 @@
   }
   .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('/images/hero768_1x.jpg');
+      url('../images/hero768_1x.jpg');
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .overlay {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('/images/hero768_2x.jpg');
+        url('../images/hero768_2x.jpg');
     }
   }
 }
@@ -100,12 +100,12 @@
   .overlay {
     // height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('/images/hero1600_1x.jpg');
+      url('../images/hero1600_1x.jpg');
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .overlay {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('/images/hero1600_2x.jpg');
+        url('../images/hero1600_2x.jpg');
     }
   }
   .hero-title {
