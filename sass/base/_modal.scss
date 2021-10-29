@@ -199,48 +199,58 @@ label {
   position: relative;
   height: 24px;
   margin-bottom: 30px;
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    justify-content: center;
+  }
   label {
     position: absolute;
     height: 24px;
     display: flex;
     align-items: center;
-    padding-left: 40px;
+    padding-left: 25px;
   }
   .policy-text {
     font-weight: 400;
-    font-size: 14px;
+    // font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: getColor('paragraph-contact');
+    @media screen and (max-width: 1599px) {
+      font-size: 12px;
+    }
+    @media screen and (min-width: 1600px) {
+      font-size: 14px;
+    }
+    .policy-conditions {
+      margin: 0;
+      margin: 0;
+      display: inline;
+      color: getColor('blue');
+      text-decoration: underline;
+    }
   }
-  .policy-conditions {
-    margin: 0;
-    margin: 0;
-    display: inline;
-    color: getColor('blue');
-    text-decoration: underline;
-  }
-}
 
-.check-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
-  pointer-events: none;
-}
-.icon-check {
-  position: absolute;
-  left: 14px;
-  top: 3px;
-  border-radius: 1px;
-  border: 2px solid getColor('black');
-  fill: transparent;
-  transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .check-input:checked + label & {
-    background-color: getColor('blue');
-    fill: getColor('white');
-    border: transparent;
+  .check-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    pointer-events: none;
+  }
+  .icon-check {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    border-radius: 1px;
+    border: 2px solid getColor('black');
+    fill: transparent;
+    transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .check-input:checked + label & {
+      background-color: getColor('blue');
+      fill: getColor('white');
+      border: transparent;
+    }
   }
 }
