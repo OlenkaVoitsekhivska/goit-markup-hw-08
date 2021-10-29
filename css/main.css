@@ -410,8 +410,6 @@ li {
 .hero-box {
   display: block;
   /* background-color: var(--hero-footer-bcg); */
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .overlay {
@@ -420,14 +418,10 @@ li {
   background-repeat: no-repeat;
   max-width: 100%;
   background-size: cover;
-  height: 600px;
   background-position: center;
-  /* margin-right: auto;
-  margin-left: auto; */
 }
 
 .hero-title {
-  width: 696px;
   margin-right: auto;
   margin-bottom: 30px;
   margin-left: auto;
@@ -459,35 +453,66 @@ li {
 }
 
 @media screen and (min-width: 320px) {
-  .hero-title {
-    font-size: 26px;
-    width: auto;
-  }
-}
-
-@media screen and (min-width: 480px) {
   .hero-box {
     padding-top: 118px;
     padding-bottom: 118px;
   }
-  .overlay {
-    height: 400px;
+  .hero-title {
+    font-size: 26px;
+    width: auto;
   }
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero480_1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero480_1x.jpg");
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero480_2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero480_2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
   .hero-title {
     display: block;
     width: 360px;
     font-size: 26px;
   }
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero768_1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero768_1x.jpg");
+  }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero768_2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero768_2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1100px) {
   .hero-box {
     padding-top: 200px;
     padding-bottom: 200px;
   }
   .overlay {
-    height: 600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero1600_1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero1600_1x.jpg");
   }
+}
+
+@media screen and (min-width: 1100px) and (min-device-pixel-ratio: 2), screen and (min-width: 1100px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1100px) and (min-resolution: 192dpi), screen and (min-width: 1100px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero1600_2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero1600_2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1100px) {
   .hero-title {
     display: block;
     width: 696px;
