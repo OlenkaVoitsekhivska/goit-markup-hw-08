@@ -243,6 +243,9 @@ li {
   .menu-button:hover, .menu-button:focus {
     fill: #2196f3;
   }
+  .icon-menu {
+    style: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
   .js-open-menu .icon-cross {
     display: none;
   }
@@ -1134,6 +1137,14 @@ label {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .signup-form {
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+  }
+}
+
 .signup-form .signup-text {
   padding: 0;
   margin: 0;
@@ -1144,6 +1155,12 @@ label {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (max-width: 479px) {
+  .signup-form .signup-text {
+    margin-top: 15px;
+  }
 }
 
 .signup-form label {
