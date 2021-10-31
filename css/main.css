@@ -243,9 +243,6 @@ li {
   .menu-button:hover, .menu-button:focus {
     fill: #2196f3;
   }
-  .icon-menu {
-    style: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
   .js-open-menu .icon-cross {
     display: none;
   }
@@ -292,16 +289,45 @@ li {
 
 .mobsocials .mobsocials__link {
   text-decoration: none;
-  font-size: 18px;
   font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
 
-.mobsocials .mobsocials__link::after {
-  content: '|';
-  margin: 0 10px;
+@media screen and (max-width: 479px) {
+  .mobsocials .mobsocials__link {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .mobsocials .mobsocials__link {
+    font-size: 18px;
+  }
+  .mobsocials .mobsocials__link::after {
+    content: '';
+    color: #757575;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    margin: 0 9px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-bar__link {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 32px;
+  }
+  .header-contacts {
+    margin-top: 30px;
+  }
+  .header-contacts__link.phone {
+    font-size: 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
