@@ -1931,6 +1931,9 @@ label {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .project:first-child {
+    height: 144px;
+  }
   .projects-list__item {
     width: calc((100% - 2 * 15px) / 2);
   }
