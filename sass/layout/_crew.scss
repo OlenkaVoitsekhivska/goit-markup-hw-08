@@ -5,7 +5,7 @@
 }
 .crew__title {
   font-weight: 700;
-  font-size: 36px;
+  // font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: getColor('headings');
@@ -103,6 +103,9 @@
     flex-wrap: wrap;
     width: 100%;
   }
+  .crew__title {
+    font-size: 28px;
+  }
   .crew__item {
     width: calc((100% - 30px) / 2);
   }
@@ -119,6 +122,9 @@
   .crew {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+  .crew__title {
+    font-size: 36px;
   }
   .crew__list {
     display: flex;
