@@ -76,6 +76,9 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .crew__title {
+    font-size: 28px;
+  }
   .crew__list {
     display: block;
     width: 100%;
@@ -118,7 +121,7 @@
     // padding-left: 64px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .crew {
     padding-top: 94px;
     padding-bottom: 94px;

@@ -33,12 +33,12 @@
   padding-top: 27px;
   padding-bottom: 27px;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .services {
     display: none;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .services__list {
     display: flex;
     flex-wrap: wrap;

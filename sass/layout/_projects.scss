@@ -84,7 +84,11 @@
     }
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
+  .projects-filter {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   // .projects-list {
   //   display: flex;
   //   flex-wrap: wrap;
