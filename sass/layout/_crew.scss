@@ -15,7 +15,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1170px;
-  margin-top: 50px;
+  // margin-top: 50px;
 }
 
 .crew__item {
@@ -82,6 +82,7 @@
   .crew__list {
     display: block;
     width: 100%;
+    margin-top: 30px;
   }
   .crew__item {
     width: 100%;
@@ -106,9 +107,7 @@
     flex-wrap: wrap;
     width: 100%;
   }
-  .crew__title {
-    font-size: 28px;
-  }
+
   .crew__item {
     width: calc((100% - 30px) / 2);
   }
@@ -131,6 +130,7 @@
   }
   .crew__list {
     display: flex;
+    margin-top: 50px;
   }
   .crew__item {
     width: calc((100% - 6 * 15px) / 4);
